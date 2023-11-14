@@ -38,4 +38,21 @@
   font-weight: 400;
   animation: falling 3s ease-in-out;
   text-align: center;
+  margin-top: 1em;
+}
+
+.falling__p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  padding: 0 3em 0 12em;
+  animation: falling 3s ease-in-out;
+}
+
+@media (max-width: 920px) {
+  .falling__p {
+    padding: 0 3em;
+  }
 }
