@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
-import { Navigate, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./components/Home";
 import SobreMi from "./components/SobreMi";
 import Proyectos from "./components/Proyectos";
