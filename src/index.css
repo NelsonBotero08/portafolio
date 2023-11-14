@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text-tittle: #f7f9f9;
+  --background-prymary: #283747;
+  --background-secundary: #34495e3f;
+  --font-secundary: "Lobster", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-p: 300;
+}
+
+body {
+  min-width: 320px;
+  font-family: var(--font-primary);
+  background-color: var(--background-prymary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  color: var(--text-tittle);
+}
+
+h1 {
+  font-weight: var(--font-weight-bold);
+  color: var(--text-tittle);
+}
+
+h2 {
+  font-weight: var(--font-weight-medium-bold);
+  color: var(--text-tittle);
+}
+
+h3 {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-tittle);
+}
+
+p {
+  font-weight: var(--font-weight-p);
+  color: var(--text-tittle);
+}
+
+ul {
+  list-style: none;
+}

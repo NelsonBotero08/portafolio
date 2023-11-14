@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "tittle": "Home",
+        "icon": "bx bx-home"
+    },
+
+    {
+        "id": 1,
+        "tittle": "Certificaciones",
+        "icon": "bx bx-book-open"
+    },
+    {
+        "id": 2,
+        "tittle": "Proyectos",
+        "icon": "bx bx-file"
+    },
+    {
+        "id": 3,
+        "tittle": "Contactame",
+        "icon": "bx bxs-phone-call"
+    }
+]

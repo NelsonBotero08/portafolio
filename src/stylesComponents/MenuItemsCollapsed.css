@@ -1,0 +1,26 @@
+.itemsCollapsed__menu {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  body .itemsCollapsed__menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 15vh;
+    gap: 0.5em;
+    padding: 0.5em 2em;
+  }
+
+  .items__menu-collapsed {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+
+  .items__menu-collapsed:hover {
+    background-color: rgb(184, 184, 184);
+    border-radius: 0.3em;
+    padding: 0.3em;
+  }
+}
