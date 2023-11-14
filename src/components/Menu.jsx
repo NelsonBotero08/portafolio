@@ -4,7 +4,6 @@ import name from "../utils/profile.json";
 import items from "../utils/items.json";
 import MenuItems from "./MenuItems";
 import { Link } from "react-router-dom";
-import MenuItemsCollapsed from "./MenuItemsCollapsed";
 
 const Menu = ({ handlerIsShow, collapsed }) => {
   return (

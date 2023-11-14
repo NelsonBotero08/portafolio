@@ -38,6 +38,7 @@ function App() {
         <MenuItemsCollapsed items={items} />
         <Menu handlerIsShow={handlerIsShow} collapsed={collapsed} />
         <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Certificaciones" element={<SobreMi />} />
           <Route path="/proyectos" element={<Proyectos />} />
