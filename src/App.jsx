@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import SobreMi from "./components/SobreMi";
+import Certificaciones from "./components/Certificaciones";
 import Proyectos from "./components/Proyectos";
 import Contactame from "./components/Contactame";
 import items from "./utils/items.json";
@@ -43,9 +38,8 @@ function App() {
         <MenuItemsCollapsed items={items} />
         <Menu handlerIsShow={handlerIsShow} collapsed={collapsed} />
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/Certificaciones" element={<SobreMi />} />
+          <Route path="/" element={<Home collapsed={collapsed} />} />
+          <Route path="/certificaciones" element={<Certificaciones />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/contactame" element={<Contactame />} />
         </Routes>

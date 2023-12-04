@@ -1,14 +1,14 @@
 import React from "react";
 import "../stylesComponents/Sobremi.css";
 
-const SobreMi = () => {
+const Certificaciones = () => {
   return (
     <div className="container">
       <div className="div__container">
-        <h1>Sobre Mi</h1>
+        <h1>Certificaciones</h1>
       </div>
     </div>
   );
 };
 
-export default SobreMi;
+export default Certificaciones;

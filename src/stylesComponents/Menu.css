@@ -6,7 +6,7 @@
   align-items: center;
   margin: 5px;
   background-color: var(--background-secundary);
-  box-shadow: -3px -3px 5px 5px black;
+  box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -27,6 +27,7 @@
   margin: 1rem;
   margin-left: 45px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .menu__name {
@@ -66,7 +67,7 @@
   color: var(--text-tittle);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   .container__menu {
     display: none;
   }

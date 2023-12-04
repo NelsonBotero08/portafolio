@@ -1,4 +1,4 @@
-import image from "../images/img-perfil.jpeg";
+import image from "../images/fotoCv2.jpeg";
 import "../stylesComponents/Menu.css";
 import name from "../utils/profile.json";
 import items from "../utils/items.json";
@@ -38,11 +38,11 @@ const Menu = ({ handlerIsShow, collapsed }) => {
         <ul>
           {items.map((item, index) => (
             <li key={index}>
-              <Link to={`/${item.tittle.toLowerCase()}`}>
+              <Link to={`${item.path}`}>
                 <MenuItems
                   collapsed={collapsed}
                   itemImg={item.icon}
-                  text={collapsed ? "" : item.tittle}
+                  text={collapsed ? "" : item.title}
                 />
               </Link>
             </li>

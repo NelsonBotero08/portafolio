@@ -1,13 +1,19 @@
 import React from "react";
 import "../stylesComponents/Home.css";
 
-const Home = () => {
+const Home = ({ collapsed }) => {
   return (
     <div className="container">
       <div className="div__container">
-        <h2 className="falling-title">Nelson Arturo Botero Sabogal</h2>
+        <h2 className={`${collapsed ? "title_collapsed" : "title_expanded"}`}>
+          Nelson Arturo Botero Sabogal
+        </h2>
         <h3 className="falling__h3">Desarrollador FullStack</h3>
-        <p className="falling__p">
+        <p
+          className={`${
+            collapsed ? "falling__p--collapsed" : "falling__p--expanded"
+          }`}
+        >
           Con más de un año de experiencia como Desarrollador Fullstack, me he
           destacado en el sector educativo, centrándome en el diseño y
           desarrollo de Microservicios utilizando Node.js. Mi enfoque principal

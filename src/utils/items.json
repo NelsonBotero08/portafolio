@@ -1,23 +1,26 @@
 [
     {
         "id": 0,
-        "tittle": "Home",
-        "icon": "bx bx-home"
+        "title": "Portafolio",
+        "icon": "bx bx-user",
+        "path": "/"
     },
-
     {
         "id": 1,
-        "tittle": "Certificaciones",
-        "icon": "bx bx-book-open"
+        "title": "Certificaciones",
+        "icon": "bx bx-book-open",
+        "path": "/certificaciones"
     },
     {
         "id": 2,
-        "tittle": "Proyectos",
-        "icon": "bx bx-file"
+        "title": "Proyectos",
+        "icon": "bx bx-file",
+        "path": "/proyectos"
     },
     {
         "id": 3,
-        "tittle": "Contactame",
-        "icon": "bx bxs-phone-call"
+        "title": "Contactame",
+        "icon": "bx bxs-phone-call",
+        "path": "/contactame"
     }
 ]

@@ -8,8 +8,12 @@
   gap: 15px;
   margin-top: 1.2rem;
   background-color: #566573;
-  box-shadow: -3px -3px 5px 5px black;
+  box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.container__items:hover {
+  background-color: #3a5977;
 }
 
 .img__item {
@@ -26,11 +30,11 @@
   width: 40px;
   height: 40px;
   background-color: #566573;
-  box-shadow: -3px -3px 5px 5px black;
+  box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   .container__items {
     display: none;
   }
