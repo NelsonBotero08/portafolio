@@ -19,19 +19,29 @@
 .img__item {
   color: var(--text-tittle);
   font-size: 2rem;
+  animation: growRotateMenu 2s infinite alternate ease;
 }
 
 .icon__menu-collapsed {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 24px;
   width: 40px;
   height: 40px;
   background-color: #566573;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+@keyframes growRotateMenu {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 900px) {

@@ -1,25 +1,31 @@
 [
     {
         "id": 0,
-        "title": "Portafolio",
-        "icon": "bx bx-user",
+        "title": "Home",
+        "icon": "bx bx-home",
         "path": "/"
     },
     {
         "id": 1,
-        "title": "Certificaciones",
-        "icon": "bx bx-book-open",
-        "path": "/certificaciones"
+        "title": "About",
+        "icon": "bx bx-user",
+        "path": "/about"
     },
     {
         "id": 2,
-        "title": "Proyectos",
+        "title": "Skills",
+        "icon": "bx bx-code",
+        "path": "/skills"
+    },
+    {
+        "id": 3,
+        "title": "Projects",
         "icon": "bx bx-file",
         "path": "/proyectos"
     },
     {
         "id": 3,
-        "title": "Contactame",
+        "title": "contact",
         "icon": "bx bxs-phone-call",
         "path": "/contactame"
     }

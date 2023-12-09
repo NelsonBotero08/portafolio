@@ -1,0 +1,108 @@
+.container__skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  z-index: -1;
+}
+
+.icon--skills {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em 0 3em;
+  gap: 1em;
+}
+
+.icon--skills--collapsed {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3em;
+  padding-left: 2em;
+  gap: 1em;
+}
+
+.bxl-vuejs {
+  color: #41b883;
+  font-size: 12em;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-react {
+  color: #61dbfb;
+  font-size: 12em;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-html5 {
+  font-size: 12em;
+  background: linear-gradient(90deg, #e34c26, #f06529, #ebebeb, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-css3 {
+  font-size: 12em;
+  background: linear-gradient(
+    90deg,
+    #264de4,
+    #2965f1,
+    #ebebeb,
+    #ffffff,
+    #000000
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-javascript {
+  color: #f0db4f;
+  font-size: 12em;
+  animation: growRotate 5s infinite alternate ease;
+  border-radius: 0.2em;
+}
+
+.bxl-nodejs {
+  font-size: 12em;
+  background: linear-gradient(90deg, #303030, #68a063, #3c873a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-typescript {
+  font-size: 12em;
+  background: linear-gradient(90deg, #007acc, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+.bxl-postgresql {
+  font-size: 12em;
+  background: linear-gradient(90deg, #0064a5, #336791, #008bb9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: growRotate 5s infinite alternate ease;
+}
+
+@keyframes growRotate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}

@@ -1,8 +1,7 @@
-import image from "../images/fotoCv2.jpeg";
-import "../stylesComponents/Menu.css";
+import "../stylesPages/Menu.css";
 import name from "../utils/profile.json";
 import items from "../utils/items.json";
-import MenuItems from "./MenuItems";
+import MenuItems from "../components/Menu/MenuItems";
 import { Link } from "react-router-dom";
 
 const Menu = ({ handlerIsShow, collapsed }) => {
@@ -28,7 +27,9 @@ const Menu = ({ handlerIsShow, collapsed }) => {
           </div>
         ) : (
           <>
-            <img className="menu__img" src={image} alt="Image perfil" />
+            <div className="div__expanded--p">
+              <p className="menu__expanded--p">N</p>
+            </div>
             <p className="menu__name">{name.name}</p>
             <p className="menu__p">{name.activity}</p>
           </>

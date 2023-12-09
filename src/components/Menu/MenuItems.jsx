@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesComponents/MenuItems.css";
+import "../Styles/MenuItems.css";
 
 const MenuItems = ({ itemImg, text, collapsed }) => {
   return (

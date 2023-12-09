@@ -1,14 +1,14 @@
 import React from "react";
-import "../stylesComponents/Proyectos.css";
+import "../stylesPages/Contactame.css";
 
-const Proyectos = () => {
+const Contactame = () => {
   return (
     <div className="container">
       <div className="div__container">
-        <h1>Estoy en proyectos</h1>
+        <h1>Estoy en contactame</h1>
       </div>
     </div>
   );
 };
 
-export default Proyectos;
+export default Contactame;

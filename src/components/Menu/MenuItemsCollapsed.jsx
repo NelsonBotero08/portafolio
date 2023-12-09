@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../stylesComponents/MenuItemsCollapsed.css";
+import "../Styles/MenuItemsCollapsed.css";
 
 const MenuItemsCollapsed = ({ items }) => {
   return (
@@ -8,21 +8,26 @@ const MenuItemsCollapsed = ({ items }) => {
       <ul className="itemsCollapsed__menu">
         <li>
           <Link to={items[0].path} className="items__menu-collapsed">
-            Portafolio
+            Home
           </Link>
         </li>
         <li>
           <Link to={items[1].path} className="items__menu-collapsed">
-            Certificaciones
+            About
           </Link>
         </li>
         <li>
           <Link to={items[2].path} className="items__menu-collapsed">
-            Proyectos
+            Skills
           </Link>
         </li>
         <li>
           <Link to={items[3].path} className="items__menu-collapsed">
+            Proyectos
+          </Link>
+        </li>
+        <li>
+          <Link to={items[4].path} className="items__menu-collapsed">
             Contactame
           </Link>
         </li>

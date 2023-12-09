@@ -21,16 +21,8 @@
   cursor: pointer;
 }
 
-.menu__img {
-  width: 150px;
-  height: 150px;
-  margin: 1rem;
-  margin-left: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .menu__name {
+  padding-top: 2em;
   font-size: 0.9em;
   font-weight: var(--font-weight-medium-bold);
   margin-bottom: 3px;
@@ -64,6 +56,25 @@
 
 .menu__collapsed--p {
   font-size: 2.5em;
+  color: var(--text-tittle);
+  animation: growRotateMenu 2s infinite alternate ease;
+}
+
+.div__expanded--p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu__expanded--p {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
   color: var(--text-tittle);
 }
 

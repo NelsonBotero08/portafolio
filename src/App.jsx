@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Menu from "./components/Menu";
+import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Certificaciones from "./components/Certificaciones";
-import Proyectos from "./components/Proyectos";
-import Contactame from "./components/Contactame";
+import Home from "./pages/Home";
+import Proyectos from "./pages/Proyectos";
+import Contactame from "./pages/Contactame";
 import items from "./utils/items.json";
-import MenuItemsCollapsed from "./components/MenuItemsCollapsed";
+import MenuItemsCollapsed from "./components/Menu/MenuItemsCollapsed";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -39,7 +40,8 @@ function App() {
         <Menu handlerIsShow={handlerIsShow} collapsed={collapsed} />
         <Routes>
           <Route path="/" element={<Home collapsed={collapsed} />} />
-          <Route path="/certificaciones" element={<Certificaciones />} />
+          <Route path="/about" element={<About collapsed={collapsed} />} />
+          <Route path="/skills" element={<Skills collapsed={collapsed} />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/contactame" element={<Contactame />} />
         </Routes>
