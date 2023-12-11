@@ -37,8 +37,8 @@ const Menu = ({ handlerIsShow, collapsed }) => {
       </div>
       <div>
         <ul>
-          {items.map((item, index) => (
-            <li key={index}>
+          {items.map((item) => (
+            <li key={item.id}>
               <Link to={`${item.path}`}>
                 <MenuItems
                   collapsed={collapsed}

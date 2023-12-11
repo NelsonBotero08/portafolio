@@ -61,9 +61,7 @@
   }
 
   .falling__h3--expanded {
-    font-size: 2em;
-    text-align: center;
-    padding: 0 1em;
+    font-size: 2.5em;
   }
 
   .title_collapsed--home,
@@ -74,8 +72,6 @@
   }
 
   .falling__h3--collapsed {
-    text-align: center;
-    font-size: 2em;
-    padding: 0 1em;
+    font-size: 2.5em;
   }
 }

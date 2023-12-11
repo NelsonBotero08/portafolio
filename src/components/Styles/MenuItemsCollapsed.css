@@ -1,26 +1,50 @@
+.container__menu--dispositivo,
 .itemsCollapsed__menu {
   display: none;
 }
 
 @media (max-width: 900px) {
-  .itemsCollapsed__menu {
+  .container__menu--dispositivo {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    height: 15vh;
-    gap: 0.5em;
-    padding: 0.5em 2em;
+    align-items: center;
+    position: relative;
+    padding: 0.2em 1em;
   }
 
-  .items__menu-collapsed {
+  .bx-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .menuNone {
+    display: none;
+  }
+
+  .menu,
+  .itemsCollapsed__menu {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5em;
+    position: absolute;
+    top: 2px;
+    right: 25px;
+    z-index: 1;
+  }
+
+  .itemsCollapsed__menu--li {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 1.2em;
+    background-color: rgb(128, 128, 128);
+    margin-top: 5px;
+  }
+
+  a {
     color: white;
     font-size: 0.8em;
     text-decoration: none;
-  }
-
-  .items__menu-collapsed:hover {
-    background-color: rgb(184, 184, 184);
-    border-radius: 0.3em;
-    padding: 0.3em;
   }
 }

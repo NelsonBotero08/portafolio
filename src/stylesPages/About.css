@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 10%;
+  padding: 0 1em 1em 1em;
+  top: 10vh;
   left: 0;
   width: 100%;
-  z-index: -1;
 }
 
 .about__title {
@@ -38,8 +38,12 @@
   text-align: justify;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .p__about--collapsep {
-    padding: 0 1.5em 1em 1em;
+    padding: 0;
+  }
+
+  .p__about--expanded {
+    padding: 0;
   }
 }
