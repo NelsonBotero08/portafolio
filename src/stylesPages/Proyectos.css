@@ -64,3 +64,21 @@
   transform: scale(1.1);
   box-shadow: -4px -4px 8px 8px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 700px) {
+  .proyect__containe--expanded {
+    width: 100%;
+  }
+  .proyect__containe--collapsed {
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+  }
+  .section__experience--projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}

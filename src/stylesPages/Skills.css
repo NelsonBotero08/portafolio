@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   gap: 1em;
   padding: 0 1em 0 270px;
+  background-color: #41b883;
 }
 
 .icon--skills--collapsed {
@@ -25,7 +26,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
-  padding: 0 1em 0 100px;
+  padding: 0 1em 0 90px;
 }
 
 .bxl-vuejs {
@@ -105,5 +106,15 @@
   }
   100% {
     transform: scale(1.2);
+  }
+}
+
+@media (max-width: 700px) {
+  .icon--skills {
+    padding: 0;
+  }
+
+  .icon--skills--collapsed {
+    padding: 0;
   }
 }
