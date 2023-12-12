@@ -34,7 +34,7 @@ const Projects = ({ collapsed }) => {
         </section>
 
         <section className="projects">
-          <h2>Proyectos</h2>
+          <h2 className="title__projects">Proyectos</h2>
         </section>
       </section>
     </article>

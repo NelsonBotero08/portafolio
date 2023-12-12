@@ -32,7 +32,8 @@
   gap: 2em;
 }
 
-.title__experience {
+.title__experience,
+.title__projects {
   font-size: 2em;
 }
 
