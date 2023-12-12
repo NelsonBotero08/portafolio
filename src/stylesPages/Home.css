@@ -1,51 +1,61 @@
+.div__container--home--expanded {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  left: 270px;
+  gap: 2em;
+}
+
 .div__container--home {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 10vh;
-  left: 0;
-  gap: 1em;
+  left: 90px;
+  gap: 2em;
 }
 
 .title_expanded--home,
-.falling__h3--expanded,
+.falling__h3--expanded {
+  width: 100%;
+  text-align: center;
+}
+
 .section__cv,
 .section__contact {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 0.3em;
-  padding: 0 1em 0 270px;
 }
 
 .title_expanded--home {
-  font-size: 3.7em;
+  font-size: 3.5em;
 }
 
 .falling__h3--expanded {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 .title_collapsed--home,
-.falling__h3--collapsed,
-.section__cv,
-.section__contact {
+.falling__h3--collapsed {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
-  padding: 0 1em 0 100px;
+  text-align: center;
 }
 
 .title_collapsed--home {
-  font-size: 4.2em;
+  font-size: 4em;
 }
 
 .falling__h3--collapsed {
-  font-size: 5em;
+  font-size: 4em;
 }
 
+.section__cv,
 .section__contact {
   width: 100%;
   display: flex;
@@ -53,10 +63,20 @@
 }
 
 .bxl-linkedin-square,
-.bxl-github {
+.bxl-github,
+.bxl-whatsapp {
   color: white;
   font-size: 4.5em;
   cursor: pointer;
+  border-radius: 0.2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bxl-linkedin-square:hover,
+.bxl-github:hover,
+.bxl-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: -4px -4px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .btn__cv {
@@ -77,6 +97,25 @@
 }
 
 @media (max-width: 900px) {
+  .div__container--home--expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+  }
+
+  .div__container--home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+  }
   .title_expanded--home,
   .falling__h3--expanded,
   .section__cv,
@@ -105,6 +144,25 @@
 }
 
 @media (max-width: 700px) {
+  .div__container--home--expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+  }
+
+  .div__container--home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+  }
   .title_expanded--home,
   .falling__h3--expanded,
   .section__cv,

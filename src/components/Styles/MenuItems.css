@@ -10,6 +10,7 @@
   background-color: #566573;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 1;
 }
 
 .container__items:hover {

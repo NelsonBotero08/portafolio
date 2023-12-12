@@ -1,6 +1,6 @@
 .container__menu {
   max-width: 250px;
-  min-height: 98vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   align-items: center;

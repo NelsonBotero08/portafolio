@@ -3,12 +3,12 @@ import "./App.css";
 import Menu from "./pages/Menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Proyectos from "./pages/Proyectos";
-import Contactame from "./pages/Contactame";
+import Contact from "./pages/Contact";
 import items from "./utils/items.json";
 import MenuItemsCollapsed from "./components/Menu/MenuItemsCollapsed";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -42,8 +42,11 @@ function App() {
           <Route path="/" element={<Home collapsed={collapsed} />} />
           <Route path="/about" element={<About collapsed={collapsed} />} />
           <Route path="/skills" element={<Skills collapsed={collapsed} />} />
-          <Route path="/proyectos" element={<Proyectos />} />
-          <Route path="/contactame" element={<Contactame />} />
+          <Route
+            path="/proyects"
+            element={<Projects collapsed={collapsed} />}
+          />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>

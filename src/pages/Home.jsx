@@ -11,7 +11,11 @@ const Home = ({ collapsed }) => {
     link.click();
   };
   return (
-    <section className="div__container--home">
+    <section
+      className={`${
+        collapsed ? "div__container--home" : "div__container--home--expanded"
+      }`}
+    >
       <h2
         className={`${
           collapsed ? "title_collapsed--home" : "title_expanded--home"
@@ -28,10 +32,16 @@ const Home = ({ collapsed }) => {
       </h3>
       <section className="section__contact">
         <a href="https://www.linkedin.com/in/nbotero081518" target="_blank">
-          <i class="bx bxl-linkedin-square"></i>
+          <i className="bx bxl-linkedin-square"></i>
         </a>
         <a href="https://github.com/NelsonBotero08" target="_blank">
-          <i class="bx bxl-github"></i>
+          <i className="bx bxl-github"></i>
+        </a>
+        <a
+          href="https://web.whatsapp.com/send?phone=+573196675159&text=Me%20interesa%20tu%20CV"
+          target="_blank"
+        >
+          <i class="bx bxl-whatsapp"></i>
         </a>
       </section>
       <section className="section__cv">
