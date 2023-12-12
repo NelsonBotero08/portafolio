@@ -1,9 +1,9 @@
 import React from "react";
-import certificacion from "../images/Certificacion.jpg";
+import certificacion from "../../public/Certificacion.jpg";
 import "../stylesPages/Proyectos.css";
 
 const Projects = ({ collapsed }) => {
-  const CertificatePath = "../images/certificacion.pdf";
+  const CertificatePath = "../../Certificacion.pdf";
 
   const handleCertificate = () => {
     const link = document.createElement("a");
