@@ -16,16 +16,16 @@ const About = ({ collapsed }) => {
         creación y optimización de API Rest y servicios web para proporcionar
         soluciones eficientes y escalables. Actualmente, estoy llevando a cabo
         mis estudios en Academlo, donde he completado con éxito el módulo de
-        fundamentos y estoy a punto de finalizar el módulo de React. Mi objetivo
-        es continuar mi formación con Node.js para fortalecer aún más mis
-        habilidades y conocimientos como desarrollador Fullstack. Durante mi
-        trayectoria, he demostrado habilidades sólidas en el diseño e
-        implementación de soluciones tecnológicas, contribuyendo al desarrollo
-        exitoso de proyectos en el ámbito educativo. Mi enfoque proactivo y mi
-        compromiso con la excelencia me han permitido destacar en entornos de
-        trabajo desafiantes. Estoy entusiasmado por seguir creciendo como
-        profesional, enfrentando nuevos retos y aplicando mi experiencia para
-        desarrollar soluciones innovadoras y eficaces.
+        fundamentos y el módulo de React. Mi objetivo es continuar mi formación
+        con Node.js para fortalecer aún más mis habilidades y conocimientos como
+        desarrollador Fullstack. Durante mi trayectoria, he demostrado
+        habilidades sólidas en el diseño e implementación de soluciones
+        tecnológicas, contribuyendo al desarrollo exitoso de proyectos en el
+        ámbito educativo. Mi enfoque proactivo y mi compromiso con la excelencia
+        me han permitido destacar en entornos de trabajo desafiantes. Estoy
+        entusiasmado por seguir creciendo como profesional, enfrentando nuevos
+        retos y aplicando mi experiencia para desarrollar soluciones innovadoras
+        y eficaces.
       </p>
     </div>
   );

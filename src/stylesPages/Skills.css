@@ -16,6 +16,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
+  padding: 0 1em 0 270px;
 }
 
 .icon--skills--collapsed {
@@ -24,6 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
+  padding: 0 1em 0 100px;
 }
 
 .bxl-vuejs {

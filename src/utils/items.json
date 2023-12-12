@@ -21,12 +21,12 @@
         "id": 3,
         "title": "Proyectos",
         "icon": "bx bx-file",
-        "path": "/proyectos"
+        "path": "/proyects"
     },
     {
         "id": 4,
         "title": "Contactame",
         "icon": "bx bxs-phone-call",
-        "path": "/contactame"
+        "path": "/contact"
     }
 ]
