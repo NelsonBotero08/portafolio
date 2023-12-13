@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesPages/Home.css";
 
 const Home = ({ collapsed }) => {
-  const cvPath = "../../NelsonBoteroCV.pdf";
+  const cvPath = "../../public/experence/NelsonBoteroCV.pdf";
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");

@@ -1,16 +1,55 @@
-import React from "react";
-import certificacion from "../../public/Certificacion.jpg";
+import React, { useEffect, useState } from "react";
 import "../stylesPages/Proyectos.css";
+import experience from "../utils/experience.json";
+import projects from "../utils/projects.json";
 
 const Projects = ({ collapsed }) => {
-  const CertificatePath = "../../Certificacion.pdf";
+  const [countCertificate, setCountCertificate] = useState(0);
+  const [countProjects, setCountProjects] = useState(0);
+  const [certificate, setCertificate] = useState(
+    experience[countCertificate].link
+  );
+  const [certificatePath, setCertificatePath] = useState(
+    experience[countCertificate].path
+  );
+  const [project, setProject] = useState(projects[countProjects].path);
 
-  const handleCertificate = () => {
+  const handlePlusCertificate = () => {
+    if (countCertificate < experience.length - 1)
+      setCountCertificate(countCertificate + 1);
+  };
+
+  const handlePlusProject = () => {
+    if (countProjects < projects.length - 1)
+      setCountProjects(countProjects + 1);
+  };
+
+  const handleMinusCertificate = () => {
+    if (countCertificate > 0) setCountCertificate(countCertificate - 1);
+  };
+
+  const handleMinusProject = () => {
+    if (countProjects > 0) setCountProjects(countProjects - 1);
+  };
+
+  useEffect(() => {
+    setCertificate(experience[countCertificate].link);
+    setCertificatePath(experience[countCertificate].path);
+  }, [countCertificate]);
+
+  useEffect(() => {
+    setProject(projects[countProjects].path);
+  }, [countProjects]);
+
+  const Path = certificatePath;
+
+  const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = CertificatePath;
-    link.download = "Certificacion_NelsonBotero.pdf";
+    link.href = Path;
+    link.download = `${experience[countCertificate].title}`;
     link.click();
   };
+
   return (
     <article
       className={`${
@@ -22,19 +61,37 @@ const Projects = ({ collapsed }) => {
       <section className="section__experience--projects">
         <section className="experience">
           <h2 className="title__experience">Experiencia</h2>
-          <img
-            className="img__experience"
-            src={certificacion}
-            alt="Certificación Centic"
-          />
-
-          <button className="btn__experience" onClick={handleCertificate}>
-            Descargar
+          <div className="carrusel">
+            <i
+              onClick={handleMinusCertificate}
+              className="bx bx-chevrons-left"
+            ></i>
+            <img
+              className="img__experience"
+              src={certificate}
+              alt="Certificación Centic"
+            />
+            <i onClick={handlePlusCertificate} class="bx bx-chevrons-right"></i>
+          </div>
+          <button onClick={handleDownload} className="btn__experience">
+            descargar
           </button>
         </section>
 
         <section className="projects">
           <h2 className="title__projects">Proyectos</h2>
+          <div className="carrusel">
+            <i onClick={handleMinusProject} className="bx bx-chevrons-left"></i>
+            <img
+              className="img__experience"
+              src={project}
+              alt="Certificación Centic"
+            />
+            <i onClick={handlePlusProject} class="bx bx-chevrons-right"></i>
+          </div>
+          <a href={projects[countProjects].link} target="_blank">
+            <button className="btn__projects">Ir al Sitio</button>
+          </a>
         </section>
       </section>
     </article>

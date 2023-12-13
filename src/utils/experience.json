@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "title": "Centic",
+        "link":"../../experence/Certificacion.jpg",
+        "path": "../../experence/Certificacion.pdf"
+    },
+    {
+        "id": 1,
+        "title": "Fundamentos",
+        "link":"../../experence/fundamentos.png",
+        "path": "../../experence/fundamentos.png"
+    },
+    {
+        "id": 2,
+        "title": "React",
+        "link":"../../experence/React.png",
+        "path": "../../experence/React.png"
+    }
+]

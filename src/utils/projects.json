@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "title": "shopping Cart",
+        "link":"https://shopping-cart-nelsonbotero.vercel.app/",
+        "path": "../../projects/shopping-cart.jpeg"
+    },
+    {
+        "id": 1,
+        "title": "Calculadora",
+        "link":"https://calculadora-react-pearl-ten.vercel.app/",
+        "path": "../../projects/calculator.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Galleta de la fortuna",
+        "link":"https://galleta-de-la-fortuna-eight.vercel.app/",
+        "path": "../../projects/galletas.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "App del clima",
+        "link":"https://climate-app-sandy.vercel.app/",
+        "path": "../../projects/climate.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Rick and Morty",
+        "link":"https://rick-and-morty-tau-kohl.vercel.app/",
+        "path": "../../projects//rick-and-morty.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "CRUD Users",
+        "link":"https://users-crud-dusky.vercel.app/",
+        "path": "../../projects/crud_users.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Pokedex",
+        "link":"https://pokedex-api-seven-inky.vercel.app/",
+        "path": "../../projects/pokedex.jpeg"
+    }
+]
