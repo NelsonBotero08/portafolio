@@ -14,8 +14,9 @@
   }
 
   .bx-menu {
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
+    color: white;
   }
 
   .menuNone {
