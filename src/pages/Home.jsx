@@ -1,8 +1,9 @@
 import React from "react";
 import "../stylesPages/Home.css";
+import cv from "../utils/experience.json";
 
 const Home = ({ collapsed }) => {
-  const cvPath = "../../experence/NelsonBoteroCV.pdf";
+  const cvPath = cv[0].path;
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
