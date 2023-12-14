@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import "../Styles/FormComponent.css";
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -8,46 +9,92 @@ const FormComponent = () => {
     message: "",
   });
 
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const [state, handleSubmit] = useForm("xgegwwka");
 
-  if (state.succeeded) {
-    return <p>Formulario enviado con éxito</p>;
-  }
+  const handleSuccessModalClose = () => {
+    setShowSuccessModal(false);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  useEffect(() => {
+    if (state.succeeded && !showSuccessModal) {
+      setShowSuccessModal(true);
+
+      // Cierra automáticamente el modal después de 3 segundos
+      setTimeout(() => {
+        setShowSuccessModal(false);
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }, 3000); // 3000 milisegundos = 3 segundos
+    }
+  }, [state.succeeded, showSuccessModal]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Nombre:</label>
-      <input
-        type="text"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <ValidationError prefix="Name" field="name" errors={state.errors} />
-      <label>Email:</label>
-      <input
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label>Mensaje:</label>
-      <textarea
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-      ></textarea>
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+    <div>
+      {/* Modal de éxito */}
+      {showSuccessModal && (
+        <div className="success-modal">
+          <p>Formulario se envio con éxito</p>
+        </div>
+      )}
 
-      <button type="submit" disabled={state.submitting}>
-        Enviar
-      </button>
-    </form>
+      {/* Formulario */}
+      <form className="form_contact" onSubmit={handleSubmit}>
+        <section className="section_name">
+          <label>Nombre</label>
+          <input
+            className="input_name"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+        </section>
+        <section className="section_email">
+          <label>Email</label>
+          <input
+            className="input_email"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </section>
+        <section className="section_description">
+          <label>Mensaje</label>
+          <textarea
+            className="input_description"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </section>
+
+        <button className="btm_form" type="submit" disabled={state.submitting}>
+          Enviar
+        </button>
+      </form>
+    </div>
   );
 };
 

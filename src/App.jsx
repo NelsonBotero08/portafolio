@@ -46,7 +46,7 @@ function App() {
             path="/proyects"
             element={<Projects collapsed={collapsed} />}
           />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact collapsed={collapsed} />} />
         </Routes>
       </Router>
     </div>
