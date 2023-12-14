@@ -69,7 +69,7 @@ const Projects = ({ collapsed }) => {
             <img
               className="img__experience"
               src={certificate}
-              alt="Certificación Centic"
+              alt=""
             />
             <i onClick={handlePlusCertificate} class="bx bx-chevrons-right"></i>
           </div>
@@ -83,9 +83,9 @@ const Projects = ({ collapsed }) => {
           <div className="carrusel">
             <i onClick={handleMinusProject} className="bx bx-chevrons-left"></i>
             <img
-              className="img__experience"
+              className="img__project"
               src={project}
-              alt="Certificación Centic"
+              alt=""
             />
             <i onClick={handlePlusProject} class="bx bx-chevrons-right"></i>
           </div>

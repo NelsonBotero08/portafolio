@@ -1,10 +1,10 @@
 .container {
+  width: 78%;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 1rem;
-  width: 100%;
-  z-index: -1;
+  top: 10vh;
+  left: 260px;
 }
 
 .div__container {
