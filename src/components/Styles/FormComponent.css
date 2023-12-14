@@ -55,6 +55,10 @@
 }
 
 .success-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   position: fixed;
   top: 0%;
   left: 100%;
@@ -67,7 +71,7 @@
   text-align: center;
   z-index: 1000;
   animation: slideIn 0.5s ease-in-out forwards;
-  width: 150px;
+  min-width: 150px;
   height: 40px;
 }
 
