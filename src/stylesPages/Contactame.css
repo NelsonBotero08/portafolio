@@ -6,9 +6,3 @@
   top: 10vh;
   left: 260px;
 }
-
-.div__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
