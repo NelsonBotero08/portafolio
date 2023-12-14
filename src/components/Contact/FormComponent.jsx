@@ -17,17 +17,8 @@ const FormComponent = () => {
 
   const [state, handleSubmit] = useForm("xgegwwka");
 
-  const handleSuccessModalClose = () => {
-    setShowSuccessModal(false);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
-
   useEffect(() => {
-    if (state.succeeded && !showSuccessModal) {
+    if (state.succeeded) {
       setShowSuccessModal(true);
 
       // Cierra automáticamente el modal después de 3 segundos
@@ -40,14 +31,14 @@ const FormComponent = () => {
         });
       }, 3000); // 3000 milisegundos = 3 segundos
     }
-  }, [state.succeeded, showSuccessModal]);
+  }, [state.succeeded]);
 
   return (
     <div>
       {/* Modal de éxito */}
       {showSuccessModal && (
         <div className="success-modal">
-          <p>Formulario se envio con éxito</p>
+          <p>Formulario se envió con éxito</p>
         </div>
       )}
 
