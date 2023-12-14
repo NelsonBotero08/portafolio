@@ -58,11 +58,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   position: fixed;
-  top: 0%;
-  left: 100%;
-  transform: translateX(-50%);
+  top: 0;
+  right: 0;
+  transform: translateX(-10%);
   border: 1px solid #4caf4fcc;
   color: #fff;
   padding: 20px;
@@ -77,16 +76,16 @@
 
 @keyframes slideIn {
   from {
-    left: 100%;
+    top: -100%;
   }
   to {
-    left: 50%;
+    top: 5vh;
   }
 }
 
 .success-modal p {
-  margin: 0;
-  font-size: 18px;
+  font-size: 1em;
+  color: #4caf4fcc;
 }
 
 .success-modal.hidden {
@@ -95,10 +94,10 @@
 
 @keyframes slideOut {
   from {
-    left: 50%;
+    top: 0;
   }
   to {
-    left: -100%;
+    top: -100%;
   }
 }
 
