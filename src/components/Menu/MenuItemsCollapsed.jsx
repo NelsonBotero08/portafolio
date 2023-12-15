@@ -21,7 +21,8 @@ const MenuItemsCollapsed = ({ items }) => {
               className={`itemsCollapsed__menu--li`}
             >
               <Link to={item.path} className="items__menu-collapsed">
-                {item.title}
+                <i className={`${item.icon}`}></i>
+                <p>{item.title}</p>
               </Link>
             </li>
           ))}

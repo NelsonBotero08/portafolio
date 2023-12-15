@@ -29,7 +29,7 @@ const Home = ({ collapsed }) => {
           collapsed ? "falling__h3--collapsed" : "falling__h3--expanded"
         }`}
       >
-        Desarrollador FullStack
+        Developer FullStack
       </h3>
       <section className="section__contact">
         <a href="https://www.linkedin.com/in/nbotero081518" target="_blank">

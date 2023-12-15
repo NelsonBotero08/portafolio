@@ -36,11 +36,18 @@
 
   .itemsCollapsed__menu--li {
     display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 1.2em;
+    align-items: center;
+    min-width: 120px;
+    height: 1.5em;
     background-color: rgb(128, 128, 128);
     margin-top: 5px;
+    padding: 0.5em;
+  }
+
+  .items__menu-collapsed {
+    display: flex;
+    gap: 1em;
+    padding: 0.2em;
   }
 
   a {

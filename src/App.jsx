@@ -9,9 +9,11 @@ import MenuItemsCollapsed from "./components/Menu/MenuItemsCollapsed";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Config from "./pages/Config";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
+  const [language, setLanguage] = useState(false);
 
   const handlerIsShow = () => {
     setCollapsed(!collapsed);
@@ -37,16 +39,27 @@ function App() {
     <div>
       <Router>
         <MenuItemsCollapsed items={items} />
-        <Menu handlerIsShow={handlerIsShow} collapsed={collapsed} />
+        <Menu
+          handlerIsShow={handlerIsShow}
+          collapsed={collapsed}
+          language={language}
+        />
         <Routes>
           <Route path="/" element={<Home collapsed={collapsed} />} />
-          <Route path="/about" element={<About collapsed={collapsed} />} />
+          <Route
+            path="/about"
+            element={<About collapsed={collapsed} language={language} />}
+          />
           <Route path="/skills" element={<Skills collapsed={collapsed} />} />
           <Route
             path="/proyects"
             element={<Projects collapsed={collapsed} />}
           />
           <Route path="/contact" element={<Contact collapsed={collapsed} />} />
+          <Route
+            path="/config"
+            element={<Config collapsed={collapsed} setLanguage={setLanguage} />}
+          />
         </Routes>
       </Router>
     </div>

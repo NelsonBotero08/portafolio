@@ -4,7 +4,7 @@ import items from "../utils/items.json";
 import MenuItems from "../components/Menu/MenuItems";
 import { Link } from "react-router-dom";
 
-const Menu = ({ handlerIsShow, collapsed }) => {
+const Menu = ({ handlerIsShow, collapsed, language }) => {
   return (
     <div className={`container__menu ${collapsed ? "collapsed" : "expanded"}`}>
       <div className="icon">
@@ -43,7 +43,9 @@ const Menu = ({ handlerIsShow, collapsed }) => {
                 <MenuItems
                   collapsed={collapsed}
                   itemImg={item.icon}
-                  text={collapsed ? "" : item.title}
+                  text={
+                    collapsed ? "" : language ? item.title_ingles : item.title
+                  }
                 />
               </Link>
             </li>
