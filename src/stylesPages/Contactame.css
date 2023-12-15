@@ -58,3 +58,9 @@
     left: 0;
   }
 }
+
+@media (max-width: 700px) {
+  .title_contact {
+    font-size: 2em;
+  }
+}
