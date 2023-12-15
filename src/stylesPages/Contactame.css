@@ -8,6 +8,7 @@
   gap: 1.5em;
   top: 3vh;
   left: 260px;
+  padding: 1em;
 }
 
 .contact__collapsed {
@@ -20,6 +21,7 @@
   gap: 1.5em;
   top: 3vh;
   left: 90px;
+  padding: 1em;
 }
 
 .title_contact {
@@ -32,20 +34,27 @@
 }
 
 @media (max-width: 900px) {
-  .container__expanded {
+  .contact__expanded {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    gap: 2em;
-    left: 0;
-    padding: 1em;
-  }
-
-  .container__collapsed {
-    width: 100%;
-    position: absolute;
-    gap: 2em;
+    gap: 1.5em;
     top: 10vh;
     left: 0;
-    padding: 1em;
+  }
+
+  .contact__collapsed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 1.5em;
+    top: 10vh;
+    left: 0;
   }
 }

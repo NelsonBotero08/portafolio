@@ -10,7 +10,9 @@ const Config = ({ collapsed, language, setLanguage }) => {
     <article
       className={`${collapsed ? "config_collapsed" : "config_expanded"}`}
     >
-      <h2 className="config__title">Configuración</h2>
+      <h2 className="config__title">{`${
+        language ? "Setting" : "Configuración"
+      }`}</h2>
       <section className="section_config section">
         <div className="section_div div">
           <p className=" div_p">{`${language ? "Language" : "Lenguaje"}`}</p>
