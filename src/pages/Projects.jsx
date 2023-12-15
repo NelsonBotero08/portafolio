@@ -3,7 +3,7 @@ import "../stylesPages/Proyectos.css";
 import experience from "../utils/experience.json";
 import projects from "../utils/projects.json";
 
-const Projects = ({ collapsed }) => {
+const Projects = ({ collapsed, language }) => {
   const [countCertificate, setCountCertificate] = useState(0);
   const [countProjects, setCountProjects] = useState(0);
   const [certificate, setCertificate] = useState(
@@ -60,37 +60,35 @@ const Projects = ({ collapsed }) => {
     >
       <section className="section__experience--projects">
         <section className="experience">
-          <h2 className="title__experience">Experiencia</h2>
+          <h2 className="title__experience">{`${
+            language ? "Experience" : "Experiencia"
+          }`}</h2>
           <div className="carrusel">
             <i
               onClick={handleMinusCertificate}
               className="bx bx-chevrons-left"
             ></i>
-            <img
-              className="img__experience"
-              src={certificate}
-              alt=""
-            />
+            <img className="img__experience" src={certificate} alt="" />
             <i onClick={handlePlusCertificate} class="bx bx-chevrons-right"></i>
           </div>
           <button onClick={handleDownload} className="btn__experience">
-            descargar
+            {`${language ? "Discharge" : "Descargar"}`}
           </button>
         </section>
 
         <section className="projects">
-          <h2 className="title__projects">Proyectos</h2>
+          <h2 className="title__projects">
+            {`${language ? "Projects" : "Proyectos"}`}
+          </h2>
           <div className="carrusel">
             <i onClick={handleMinusProject} className="bx bx-chevrons-left"></i>
-            <img
-              className="img__project"
-              src={project}
-              alt=""
-            />
+            <img className="img__project" src={project} alt="" />
             <i onClick={handlePlusProject} class="bx bx-chevrons-right"></i>
           </div>
           <a href={projects[countProjects].link} target="_blank">
-            <button className="btn__projects">Ir al Sitio</button>
+            <button className="btn__projects">{`${
+              language ? "Go to site" : "Ir al sitio"
+            }`}</button>
           </a>
         </section>
       </section>

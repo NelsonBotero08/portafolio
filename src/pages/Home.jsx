@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesPages/Home.css";
 import cv from "../utils/experience.json";
 
-const Home = ({ collapsed }) => {
+const Home = ({ collapsed, language }) => {
   const cvPath = cv[0].path;
 
   const handleDownloadCV = () => {
@@ -47,7 +47,7 @@ const Home = ({ collapsed }) => {
       </section>
       <section className="section__cv">
         <button className="btn__cv" onClick={handleDownloadCV}>
-          Descargar CV
+          {language ? "Discharge CV" : "Descargar CV"}
         </button>
       </section>
     </section>

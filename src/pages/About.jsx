@@ -3,11 +3,11 @@ import "../stylesPages/About.css";
 
 const About = ({ collapsed, language }) => {
   return (
-    <div className="container__about">
+    <div className={`container__${collapsed ? "collapsed" : "expanded"}`}>
       <h2 className="about__title">{`${
         language ? "About Me" : "Sobre Mí"
       }`}</h2>
-      <p className={`p__about--${collapsed ? "collapse" : "expanded"}`}>
+      <p className={`p__about--${collapsed ? "collapsed" : "expanded"}`}>
         {language ? (
           <>
             With over a year of experience as a Fullstack developer, I have

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import "../Styles/FormComponent.css";
 
-const FormComponent = () => {
+const FormComponent = ({ language }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,7 +21,6 @@ const FormComponent = () => {
     if (state.succeeded) {
       setShowSuccessModal(true);
 
-      // Cierra automáticamente el modal después de 3 segundos
       setTimeout(() => {
         setShowSuccessModal(false);
         setFormData({
@@ -29,7 +28,7 @@ const FormComponent = () => {
           email: "",
           message: "",
         });
-      }, 3000); // 3000 milisegundos = 3 segundos
+      }, 3000);
     }
   }, [state.succeeded]);
 
@@ -45,7 +44,7 @@ const FormComponent = () => {
       {/* Formulario */}
       <form className="form_contact" onSubmit={handleSubmit}>
         <section className="section_name">
-          <label>Nombre</label>
+          <label>{`${language ? "Name" : "Nombre"}`}</label>
           <input
             className="input_name"
             type="text"
@@ -67,7 +66,7 @@ const FormComponent = () => {
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </section>
         <section className="section_description">
-          <label>Mensaje</label>
+          <label>{`${language ? "Message" : "Mensaje"}`}</label>
           <textarea
             className="input_description"
             name="message"
@@ -82,7 +81,7 @@ const FormComponent = () => {
         </section>
 
         <button className="btm_form" type="submit" disabled={state.submitting}>
-          Enviar
+          {`${language ? "Send" : "Enviar"}`}
         </button>
       </form>
     </div>

@@ -45,7 +45,10 @@ function App() {
           language={language}
         />
         <Routes>
-          <Route path="/" element={<Home collapsed={collapsed} />} />
+          <Route
+            path="/"
+            element={<Home collapsed={collapsed} language={language} />}
+          />
           <Route
             path="/about"
             element={<About collapsed={collapsed} language={language} />}
@@ -53,12 +56,21 @@ function App() {
           <Route path="/skills" element={<Skills collapsed={collapsed} />} />
           <Route
             path="/proyects"
-            element={<Projects collapsed={collapsed} />}
+            element={<Projects collapsed={collapsed} language={language} />}
           />
-          <Route path="/contact" element={<Contact collapsed={collapsed} />} />
+          <Route
+            path="/contact"
+            element={<Contact collapsed={collapsed} language={language} />}
+          />
           <Route
             path="/config"
-            element={<Config collapsed={collapsed} setLanguage={setLanguage} />}
+            element={
+              <Config
+                collapsed={collapsed}
+                language={language}
+                setLanguage={setLanguage}
+              />
+            }
           />
         </Routes>
       </Router>
