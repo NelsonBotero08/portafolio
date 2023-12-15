@@ -21,6 +21,7 @@
   top: 5vh;
   left: 270px;
   gap: 4em;
+  padding: 1em;
 }
 
 .config__title {
@@ -75,5 +76,14 @@
     position: absolute;
     top: 10vh;
     left: 0;
+  }
+  .section_div {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .section_div {
+    width: 100%;
   }
 }
