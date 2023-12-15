@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/MenuItemsCollapsed.css";
 
-const MenuItemsCollapsed = ({ items }) => {
+const MenuItemsCollapsed = ({ items, language }) => {
   const [menu, setMenu] = useState(false);
 
   const handleMenu = () => {
@@ -22,7 +22,7 @@ const MenuItemsCollapsed = ({ items }) => {
             >
               <Link to={item.path} className="items__menu-collapsed">
                 <i className={`${item.icon}`}></i>
-                <p>{item.title}</p>
+                <p>{language ? item.title_ingles : item.title}</p>
               </Link>
             </li>
           ))}

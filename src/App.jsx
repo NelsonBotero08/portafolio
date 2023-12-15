@@ -38,7 +38,7 @@ function App() {
   return (
     <div>
       <Router>
-        <MenuItemsCollapsed items={items} />
+        <MenuItemsCollapsed items={items} language={language} />
         <Menu
           handlerIsShow={handlerIsShow}
           collapsed={collapsed}
