@@ -73,7 +73,7 @@
   width: 100px;
   height: 40px;
   font-size: 0.8em;
-  color: var(--text-tittle);
+  color: inherit;
   background-color: inherit;
   border-radius: 0.4em;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
