@@ -66,7 +66,7 @@
 .bxl-linkedin-square,
 .bxl-github,
 .bxl-whatsapp {
-  color: white;
+  color: inherit;
   font-size: 4.5em;
   cursor: pointer;
   border-radius: 0.2em;
@@ -87,8 +87,8 @@
   border: none;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  color: var(--text-tittle);
-  background-color: var(--background-secundary);
+  color: inherit;
+  background-color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

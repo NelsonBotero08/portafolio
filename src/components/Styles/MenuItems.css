@@ -7,18 +7,18 @@
   align-items: center;
   gap: 0.5em;
   margin-top: 0.8rem;
-  background-color: #566573;
+  background-color: inherit;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 1;
 }
 
 .container__items:hover {
-  background-color: #3a5977;
+  background-color: inherit;
 }
 
 .img__item {
-  color: var(--text-tittle);
+  color: inherit;
   font-size: 2rem;
   animation: growRotateMenu 2s infinite alternate ease;
 }
@@ -31,7 +31,7 @@
   font-size: 24px;
   width: 40px;
   height: 40px;
-  background-color: #566573;
+  background-color: inherit;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }

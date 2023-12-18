@@ -22,7 +22,9 @@ const MenuItemsCollapsed = ({ items, language }) => {
             >
               <Link to={item.path} className="items__menu-collapsed">
                 <i className={`${item.icon}`}></i>
-                <p>{language ? item.title_ingles : item.title}</p>
+                <p className="p__menu-collapsed">
+                  {language ? item.title_ingles : item.title}
+                </p>
               </Link>
             </li>
           ))}

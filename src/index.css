@@ -7,6 +7,8 @@
   --text-tittle: #f7f9f9;
   --background-prymary: #283747;
   --background-secundary: #34495e3f;
+  --background-light: #e5e5e5e9;
+  --text-tittle-light: #464646;
   --font-secundary: "Lobster", sans-serif;
   --font-primary: "Montserrat", sans-serif;
   --font-weight-bold: 700;
@@ -15,44 +17,68 @@
   --font-weight-p: 300;
 }
 
-body {
+body[data-theme="light"] {
+  min-width: 320px;
+  font-family: var(--font-primary);
+  background-color: var(--background-light);
+  color: var(--text-tittle-light);
+}
+
+body[data-theme="dark"] {
   min-width: 320px;
   font-family: var(--font-primary);
   background-color: var(--background-prymary);
+  color: var(--text-tittle);
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--font-primary);
-  color: var(--text-tittle);
 }
 
 h1 {
   font-weight: var(--font-weight-bold);
-  color: var(--text-tittle);
+  color: inherit;
 }
 
 h2 {
   font-weight: var(--font-weight-medium-bold);
-  color: var(--text-tittle);
+  color: inherit;
 }
 
 h3,
 label {
   font-weight: var(--font-weight-medium);
-  color: var(--text-tittle);
+  color: inherit;
 }
 
 p {
   font-weight: var(--font-weight-p);
-  color: var(--text-tittle);
+  color: inherit;
 }
 
 ul {
   list-style: none;
+  color: inherit;
+}
+
+li {
+  font-weight: var(--font-weight-medium);
+  color: inherit;
 }
 
 a {
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
+  color: inherit;
+}
+
+.bx-home,
+.bx-user,
+.bx-code,
+.bx-file,
+.bxs-phone-call,
+.bx-cog {
+  color: inherit;
 }

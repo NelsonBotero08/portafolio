@@ -14,6 +14,13 @@ import Config from "./pages/Config";
 function App() {
   const [collapsed, setCollapsed] = useState(false);
   const [language, setLanguage] = useState(false);
+  const [theme, setTheme] = useState(false);
+
+  console.log(theme);
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme ? "light" : "dark");
+  }, [theme]);
 
   const handlerIsShow = () => {
     setCollapsed(!collapsed);
@@ -69,6 +76,8 @@ function App() {
                 collapsed={collapsed}
                 language={language}
                 setLanguage={setLanguage}
+                theme={theme}
+                setTheme={setTheme}
               />
             }
           />

@@ -47,7 +47,7 @@
 .bx-chevrons-left,
 .bx-chevrons-right {
   font-size: 2.5em;
-  color: white;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -74,7 +74,7 @@
   height: 40px;
   font-size: 0.8em;
   color: var(--text-tittle);
-  background-color: #34495eb5;
+  background-color: inherit;
   border-radius: 0.4em;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

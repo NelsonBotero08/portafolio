@@ -42,7 +42,7 @@
 
 .bxl-html5 {
   font-size: 12em;
-  background: linear-gradient(90deg, #e34c26, #f06529, #ebebeb, #ffffff);
+  background: linear-gradient(90deg, #e34c26, #f06529, #b7b7b7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -51,14 +51,7 @@
 
 .bxl-css3 {
   font-size: 12em;
-  background: linear-gradient(
-    90deg,
-    #264de4,
-    #2965f1,
-    #ebebeb,
-    #ffffff,
-    #000000
-  );
+  background: linear-gradient(90deg, #264de4, #2965f1, #b7b7b7, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -83,7 +76,7 @@
 
 .bxl-typescript {
   font-size: 12em;
-  background: linear-gradient(90deg, #007acc, #ffffff);
+  background: linear-gradient(90deg, #007acc, #b7b7b7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

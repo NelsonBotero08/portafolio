@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  background-color: var(--background-secundary);
+  background-color: inherit;
   box-shadow: -2px -2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .icon__menu {
-  color: var(--text-tittle);
+  color: inherit;
   font-size: 25px;
   cursor: pointer;
 }
@@ -50,13 +50,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--text-tittle);
+  border: 2px solid;
   border-radius: 50%;
 }
 
 .menu__collapsed--p {
   font-size: 2.5em;
-  color: var(--text-tittle);
+  color: inherit;
   animation: growRotateMenu 2s infinite alternate ease;
 }
 
@@ -69,13 +69,13 @@
 .menu__expanded--p {
   width: 100px;
   height: 100px;
-  border: 2px solid white;
+  border: 2px solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  color: var(--text-tittle);
+  color: inherit;
 }
 
 @media (max-width: 900px) {

@@ -16,7 +16,7 @@
   .bx-menu {
     font-size: 2em;
     cursor: pointer;
-    color: white;
+    color: inherit;
   }
 
   .menuNone {
@@ -39,7 +39,7 @@
     align-items: center;
     min-width: 120px;
     height: 1.5em;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(175, 175, 175);
     margin-top: 5px;
     padding: 0.5em;
   }
@@ -50,9 +50,7 @@
     padding: 0.2em;
   }
 
-  a {
-    color: white;
-    font-size: 0.8em;
-    text-decoration: none;
+  .p__menu-collapsed {
+    color: inherit;
   }
 }

@@ -50,7 +50,7 @@
 
 .bx-toggle-left,
 .bx-toggle-right {
-  color: white;
+  color: inherit;
   font-size: 2.5em;
   cursor: pointer;
 }

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "../stylesPages/Config.css";
 
-const Config = ({ collapsed, language, setLanguage }) => {
+const Config = ({ collapsed, language, setLanguage, theme, setTheme }) => {
+  const handleTheme = () => {
+    setTheme(!theme);
+  };
   const handleLanguage = () => {
     setLanguage(!language);
   };
@@ -22,8 +25,11 @@ const Config = ({ collapsed, language, setLanguage }) => {
           ></i>
         </div>
         <div className="section_div div">
-          <p className=" div_p">{`${language ? "issue" : "Tema"}`}</p>
-          <i className="bx bx-toggle-left"></i>
+          <p className=" div_p">{`${language ? "Theme" : "Tema"}`}</p>
+          <i
+            onClick={handleTheme}
+            className={` bx ${theme ? "bx-toggle-right" : "bx-toggle-left"}`}
+          ></i>
         </div>
       </section>
     </article>
