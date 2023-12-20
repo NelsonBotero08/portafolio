@@ -3,7 +3,7 @@ import "../stylesPages/Home.css";
 import CV from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
-  const [cv, setCv] = useState(CV[0].path);
+  const [cv, setCv] = useState(CV[2].path);
 
   const cvPath = cv;
 
