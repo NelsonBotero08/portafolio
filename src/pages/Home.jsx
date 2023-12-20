@@ -3,9 +3,7 @@ import "../stylesPages/Home.css";
 import CV from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
-  const [cv, setCv] = useState(CV[2].path);
-
-  const cvPath = cv;
+  const cvPath = CV[1].path;
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
