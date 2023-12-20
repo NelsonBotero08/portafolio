@@ -1,18 +1,24 @@
 [
     {
         "id": 0,
+        "title": "Curriculum",
+        "link":"../../experence/CV_NelsonBotero.pdf",
+        "path": "../../experence/CV_NelsonBotero.pdf"
+    },
+    {
+        "id": 1,
         "title": "Centic",
         "link":"../../experence/Certificacion.jpg",
         "path": "../../experence/CV_NelsonBotero.pdf"
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "Fundamentos",
         "link":"../../experence/fundamentos.png",
         "path": "../../experence/fundamentos.png"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "React",
         "link":"../../experence/React.png",
         "path": "../../experence/React.png"

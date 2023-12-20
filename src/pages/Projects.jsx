@@ -4,7 +4,7 @@ import experience from "../utils/experience.json";
 import projects from "../utils/projects.json";
 
 const Projects = ({ collapsed, language }) => {
-  const [countCertificate, setCountCertificate] = useState(0);
+  const [countCertificate, setCountCertificate] = useState(1);
   const [countProjects, setCountProjects] = useState(0);
   const [certificate, setCertificate] = useState(
     experience[countCertificate].link
@@ -29,7 +29,7 @@ const Projects = ({ collapsed, language }) => {
   };
 
   const handleMinusProject = () => {
-    if (countProjects > 0) setCountProjects(countProjects - 1);
+    if (countProjects > 1) setCountProjects(countProjects - 1);
   };
 
   useEffect(() => {
