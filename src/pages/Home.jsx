@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../stylesPages/Home.css";
-import cv from "../utils/experience.json";
+import CV from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
-  const cvPath = cv[0].link;
+  const [cv, setCv] = useState(CV[0].path);
+
+  const cvPath = cv;
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
