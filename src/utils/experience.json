@@ -1,24 +1,18 @@
 [
     {
         "id": 0,
-        "title": "CV Nelson Botero",
-        "link":"../assets/NelsonBoteroCV.pdf",
-        "path": "../assets/NelsonBoteroCV.pdf"
+        "title": "Centic",
+        "link":"../../experence/Certificacion.jpg",
+        "path": "../../experence/CV_NelsonBotero.pdf"
     },
     {
         "id": 1,
-        "title": "Centic",
-        "link":"../../experence/Certificacion.jpg",
-        "path": "../../experence/Certificacion.pdf"
-    },
-    {
-        "id": 2,
         "title": "Fundamentos",
         "link":"../../experence/fundamentos.png",
         "path": "../../experence/fundamentos.png"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "React",
         "link":"../../experence/React.png",
         "path": "../../experence/React.png"

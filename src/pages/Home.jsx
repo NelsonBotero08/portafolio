@@ -3,7 +3,7 @@ import "../stylesPages/Home.css";
 import CV from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
-  const cvPath = CV[1].path;
+  const cvPath = CV[0].path;
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
@@ -42,7 +42,7 @@ const Home = ({ collapsed, language }) => {
           href="https://web.whatsapp.com/send?phone=+573196675159&text=Me%20interesa%20tu%20CV"
           target="_blank"
         >
-          <i class="bx bxl-whatsapp"></i>
+          <i className="bx bxl-whatsapp"></i>
         </a>
       </section>
       <section className="section__cv">
