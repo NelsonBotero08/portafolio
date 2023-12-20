@@ -2,8 +2,8 @@
     {
         "id": 0,
         "title": "CV Nelson Botero",
-        "link":"../../public/experence/nelsonBoteroCV.pdf",
-        "path": "../../public/experence/nelsonBoteroCV.pdf"
+        "link":"../assets/nelsonBoteroCV.pdf",
+        "path": "../assets/nelsonBoteroCV.pdf"
     },
     {
         "id": 1,
