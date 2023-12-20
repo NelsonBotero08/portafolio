@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesPages/Home.css";
-import cv from "../utils/Curriculum.json";
+import cv from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
   const cvPath = cv[0].path;
