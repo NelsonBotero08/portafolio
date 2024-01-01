@@ -40,5 +40,11 @@
         "title": "Pokedex",
         "link":"https://pokedex-api-seven-inky.vercel.app/",
         "path": "../../projects/pokedex.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Ecommerce",
+        "link":" https://e-commerce-tau-henna.vercel.app/#/",
+        "path": "../../projects/ecommerce.jpeg"
     }
 ]
