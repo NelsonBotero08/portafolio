@@ -69,7 +69,7 @@ const Projects = ({ collapsed, language }) => {
               className="bx bx-chevrons-left"
             ></i>
             <img className="img__experience" src={certificate} alt="" />
-            <i onClick={handlePlusCertificate} class="bx bx-chevrons-right"></i>
+            <i onClick={handlePlusCertificate} className="bx bx-chevrons-right"></i>
           </div>
           <button onClick={handleDownload} className="btn__experience">
             {`${language ? "Discharge" : "Descargar"}`}
@@ -83,7 +83,7 @@ const Projects = ({ collapsed, language }) => {
           <div className="carrusel">
             <i onClick={handleMinusProject} className="bx bx-chevrons-left"></i>
             <img className="img__project" src={project} alt="" />
-            <i onClick={handlePlusProject} class="bx bx-chevrons-right"></i>
+            <i onClick={handlePlusProject} className="bx bx-chevrons-right"></i>
           </div>
           <a href={projects[countProjects].link} target="_blank">
             <button className="btn__projects">{`${

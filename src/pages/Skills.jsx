@@ -7,14 +7,14 @@ const Skills = ({ collapsed }) => {
       <div
         className={`${collapsed ? "icon--skills--collapsed" : "icon--skills"}`}
       >
-        <i class="bx bxl-vuejs"></i>
-        <i class="bx bxl-react"></i>
-        <i class="bx bxl-html5"></i>
-        <i class="bx bxl-css3"></i>
-        <i class="bx bxl-javascript"></i>
-        <i class="bx bxl-typescript"></i>
-        <i class="bx bxl-nodejs"></i>
-        <i class="bx bxl-postgresql"></i>
+        <i className="bx bxl-vuejs"></i>
+        <i className="bx bxl-react"></i>
+        <i className="bx bxl-html5"></i>
+        <i className="bx bxl-css3"></i>
+        <i className="bx bxl-javascript"></i>
+        <i className="bx bxl-typescript"></i>
+        <i className="bx bxl-nodejs"></i>
+        <i className="bx bxl-postgresql"></i>
       </div>
     </div>
   );
