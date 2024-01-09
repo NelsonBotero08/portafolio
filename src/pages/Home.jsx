@@ -10,8 +10,8 @@ const Home = ({ collapsed, language }) => {
       window.matchMedia("(max-width: 767px)").matches;
 
     const link = isMobileDevice()
-      ? "whatsapp://send?phone=+573196675159&text=Me%20interesa%20tu%20CV"
-      : "https://web.whatsapp.com/send?phone=+573196675159&text=Me%20interesa%20tu%20CV";
+      ? "whatsapp://send?phone=+573196675150&text=Me%20interesa%20tu%20CV"
+      : "https://web.whatsapp.com/send?phone=+573196675150&text=Me%20interesa%20tu%20CV";
 
     setWhatsAppLink(link);
   }, []);
