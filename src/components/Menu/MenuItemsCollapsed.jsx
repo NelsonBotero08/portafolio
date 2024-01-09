@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/MenuItemsCollapsed.css";
 
-const MenuItemsCollapsed = ({ items, language }) => {
+const MenuItemsCollapsed = ({ theme, items, language }) => {
   const [menu, setMenu] = useState(false);
 
   const handleMenu = () => {
@@ -20,9 +20,18 @@ const MenuItemsCollapsed = ({ items, language }) => {
               key={item.id}
               className={`itemsCollapsed__menu--li`}
             >
-              <Link to={item.path} className="items__menu-collapsed">
+              <Link
+                to={item.path}
+                className={`${
+                  theme ? "itemMenu-theme-collapsed" : "items__menu-collapsed"
+                }`}
+              >
                 <i className={`${item.icon}`}></i>
-                <p className="p__menu-collapsed">
+                <p
+                  className={`${
+                    theme ? "p__menu-theme-collapsed" : "p__menu-collapsed"
+                  }`}
+                >
                   {language ? item.title_ingles : item.title}
                 </p>
               </Link>

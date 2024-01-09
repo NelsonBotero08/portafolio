@@ -45,7 +45,7 @@ function App() {
   return (
     <div>
       <Router>
-        <MenuItemsCollapsed items={items} language={language} />
+        <MenuItemsCollapsed theme={theme} items={items} language={language} />
         <Menu
           handlerIsShow={handlerIsShow}
           collapsed={collapsed}
