@@ -3,6 +3,19 @@ import "../stylesPages/Home.css";
 import CV from "../utils/experience.json";
 
 const Home = ({ collapsed, language }) => {
+  const [whatsappLink, setWhatsAppLink] = useState("#");
+
+  useEffect(() => {
+    const isMobileDevice = () =>
+      window.matchMedia("(max-width: 767px)").matches;
+
+    const link = isMobileDevice()
+      ? "whatsapp://send?phone=+573196675159&text=Me%20interesa%20tu%20CV"
+      : "https://web.whatsapp.com/send?phone=+573196675159&text=Me%20interesa%20tu%20CV";
+
+    setWhatsAppLink(link);
+  }, []);
+
   const cvPath = CV[0].path;
 
   const handleDownloadCV = () => {
@@ -32,16 +45,21 @@ const Home = ({ collapsed, language }) => {
         Developer FullStack
       </h3>
       <section className="section__contact">
-        <a href="https://www.linkedin.com/in/nbotero081518" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/nbotero081518"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="bx bxl-linkedin-square"></i>
         </a>
-        <a href="https://github.com/NelsonBotero08" target="_blank">
+        <a
+          href="https://github.com/NelsonBotero08"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="bx bxl-github"></i>
         </a>
-        <a
-          href="https://web.whatsapp.com/send?phone=+573196675159&text=Me%20interesa%20tu%20CV"
-          target="_blank"
-        >
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <i className="bx bxl-whatsapp"></i>
         </a>
       </section>
