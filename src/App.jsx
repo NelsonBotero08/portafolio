@@ -16,8 +16,6 @@ function App() {
   const [language, setLanguage] = useState(false);
   const [theme, setTheme] = useState(false);
 
-  console.log(theme);
-
   useEffect(() => {
     document.body.setAttribute("data-theme", theme ? "light" : "dark");
   }, [theme]);
