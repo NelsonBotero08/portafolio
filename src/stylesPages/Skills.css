@@ -31,13 +31,11 @@
 .bxl-vuejs {
   color: #41b883;
   font-size: 12em;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-react {
   color: #61dbfb;
   font-size: 12em;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-html5 {
@@ -46,7 +44,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-css3 {
@@ -55,13 +52,12 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-javascript {
   color: #f0db4f;
   font-size: 12em;
-  animation: growRotate 5s infinite alternate ease;
+
   border-radius: 0.2em;
 }
 
@@ -71,7 +67,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-typescript {
@@ -80,7 +75,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: growRotate 5s infinite alternate ease;
 }
 
 .bxl-postgresql {
@@ -89,16 +83,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: growRotate 5s infinite alternate ease;
-}
-
-@keyframes growRotate {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1.2);
-  }
 }
 
 @media (max-width: 700px) {
