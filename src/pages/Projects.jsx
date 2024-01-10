@@ -29,7 +29,7 @@ const Projects = ({ collapsed, language }) => {
   };
 
   const handleMinusProject = () => {
-    if (countProjects > 1) setCountProjects(countProjects - 1);
+    if (countProjects > 0) setCountProjects(countProjects - 1);
   };
 
   useEffect(() => {
@@ -69,7 +69,10 @@ const Projects = ({ collapsed, language }) => {
               className="bx bx-chevrons-left"
             ></i>
             <img className="img__experience" src={certificate} alt="" />
-            <i onClick={handlePlusCertificate} className="bx bx-chevrons-right"></i>
+            <i
+              onClick={handlePlusCertificate}
+              className="bx bx-chevrons-right"
+            ></i>
           </div>
           <button onClick={handleDownload} className="btn__experience">
             {`${language ? "Discharge" : "Descargar"}`}
