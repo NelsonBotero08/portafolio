@@ -25,7 +25,7 @@ const Projects = ({ collapsed, language }) => {
   };
 
   const handleMinusCertificate = () => {
-    if (countCertificate > 0) setCountCertificate(countCertificate - 1);
+    if (countCertificate > 1) setCountCertificate(countCertificate - 1);
   };
 
   const handleMinusProject = () => {
