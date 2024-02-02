@@ -7,14 +7,38 @@ const Skills = ({ collapsed }) => {
       <div
         className={`${collapsed ? "icon--skills--collapsed" : "icon--skills"}`}
       >
-        <i className="bx bxl-vuejs"></i>
-        <i className="bx bxl-react"></i>
-        <i className="bx bxl-html5"></i>
-        <i className="bx bxl-css3"></i>
-        <i className="bx bxl-javascript"></i>
-        <i className="bx bxl-typescript"></i>
-        <i className="bx bxl-nodejs"></i>
-        <i className="bx bxl-postgresql"></i>
+        <div>
+          <i className="bx bxl-html5"></i>
+          <p className="html5">HTML5</p>
+        </div>
+        <div>
+          <i className="bx bxl-css3"></i>
+          <p className="css3">CSS3</p>
+        </div>
+        <div>
+          <i className="bx bxl-javascript"></i>
+          <p className="javascript">JavaScript</p>
+        </div>
+        <div>
+          <i className="bx bxl-typescript"></i>
+          <p className="typescript">TypeScript</p>
+        </div>
+        <div>
+          <i className="bx bxl-vuejs"></i>
+          <p className="vue">Vue.js</p>
+        </div>
+        <div>
+          <i className="bx bxl-react"></i>
+          <p className="react">React.js</p>
+        </div>
+        <div>
+          <i className="bx bxl-nodejs"></i>
+          <p className="node">Node.js</p>
+        </div>
+        <div>
+          <i className="bx bxl-postgresql"></i>
+          <p className="postgres">PostgreSQL</p>
+        </div>
       </div>
     </div>
   );

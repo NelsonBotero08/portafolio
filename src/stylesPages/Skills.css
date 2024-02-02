@@ -8,6 +8,7 @@
   top: 10vh;
   left: 0;
   z-index: -1;
+  padding-bottom: 1.5em;
 }
 
 .icon--skills {
@@ -33,9 +34,21 @@
   font-size: 12em;
 }
 
+.vue {
+  color: #41b883;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .bxl-react {
   color: #61dbfb;
   font-size: 12em;
+}
+
+.react {
+  color: #61dbfb;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .bxl-html5 {
@@ -46,6 +59,12 @@
   color: transparent;
 }
 
+.html5 {
+  font-size: 1.5em;
+  color: #f06529;
+  text-align: center;
+}
+
 .bxl-css3 {
   font-size: 12em;
   background: linear-gradient(90deg, #264de4, #2965f1, #b7b7b7, #000000);
@@ -54,11 +73,23 @@
   color: transparent;
 }
 
+.css3 {
+  color: #2965f1;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .bxl-javascript {
   color: #f0db4f;
   font-size: 12em;
 
   border-radius: 0.2em;
+}
+
+.javascript {
+  color: #f0db4f;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .bxl-nodejs {
@@ -69,6 +100,12 @@
   color: transparent;
 }
 
+.node {
+  color: #68a063;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .bxl-typescript {
   font-size: 12em;
   background: linear-gradient(90deg, #007acc, #b7b7b7);
@@ -77,12 +114,24 @@
   color: transparent;
 }
 
+.typescript {
+  color: #007acc;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .bxl-postgresql {
   font-size: 12em;
   background: linear-gradient(90deg, #0064a5, #336791, #008bb9);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.postgres {
+  color: #336791;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
