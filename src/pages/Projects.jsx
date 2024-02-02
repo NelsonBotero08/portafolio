@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../stylesPages/Proyectos.css";
+import "../stylesPages/Projects.css";
 import experience from "../utils/experience.json";
 import projects from "../utils/projects.json";
 
@@ -88,6 +88,9 @@ const Projects = ({ collapsed, language }) => {
             <img className="img__project" src={project} alt="" />
             <i onClick={handlePlusProject} className="bx bx-chevrons-right"></i>
           </div>
+          <p className="project-description">
+            {projects[countProjects].description}
+          </p>
           <a href={projects[countProjects].link} target="_blank">
             <button className="btn__projects">{`${
               language ? "Go to site" : "Ir al sitio"
